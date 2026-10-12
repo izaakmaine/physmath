@@ -1,0 +1,9 @@
+Phase-0 immutability oracles (plan9.3 G1)
+Method: find <tree> -path '*/.git*' -prune -o -type f -print | sort | xargs sha256sum | sha256sum
+Toolchain: go1.25.7 linux/amd64
+Date: 2026-10-04
+
+phys/    files=3871 hash=9885a03f4b20e85a1617cd2beb2b7d47b26c9861d77fffe09c44e7e93641a2ef
+phys-gr/ files=68   hash=acf0259f1512653381a67b2aecbc6e8b65e0cfe16cb4bda42ae10f98778833b0
+
+Legacy suite: go test ./... in phys-gr — all 10 packages ok (solution 3.667s).
